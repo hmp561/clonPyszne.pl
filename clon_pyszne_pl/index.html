@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="PL-pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pyszne.pl</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAANlBMVEVHcEz/gwf/gQP/gAH/gQT/gAD/gAH/gAH/gAH/gAL/gQL/gAH/gAH/gQP/gQP/ggf/gAH/gQFWzQc/AAAAEnRSTlMAEZyPYv9Uqdi5gPfmRiR1yjWw4nqsAAAA50lEQVR4AX2SgQ7EEAxAO3QUo/7/Z4/SzHa5e0kQT5S2sHMYC79w2DkBfKD4doSCh9TH43llxkUY8tpdwSf1j0PzxyHf8fCLAErCb9TxO94YaLoo65QZvTg3f1zvx5RgHcKKZuZWl1lWR44xycMagMVBBqg4Zao2l/XMqImwKAA6E4Z0t5TsV5Gn57YyXuXQ5Npk1tNtl7lF2xf+LZsm5Fpx4g/pVJYli1beLWk3eWj9wpJm75P5KUkpjU2/VUVTmrVYtMs0JWtKWcZFQMSkvclyBT87doaSKkv3KicTUZ/M4AQgYunbD0A0C/6+797qAAAAAElFTkSuQmCC" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-xl navbar-dark shadow bg-deafuld" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-1 me-4 mb-1 " href="index.html">
+                <img src="https://www.pyszne.pl/consumer-web/images/pl-pyszne-brand.f7cd9627.svg" alt="logo pyszne.pl">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img class="w-75 text-pyszne" src="bars-solid.svg" alt=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-2">
+                <li class="nav-item">
+                    <button class="btn btn-outline-secondary p-0 ps-1 pe-1 m-0 me-1 bg-pyszne" type="button">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Główna</a>
+                    </button>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-pyszne" href="#Popularne" data-bs-toggle="dropdown" aria-expanded="false">Popularne restauracje</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-pyszne" href="#Popularne">Express Pizza</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Popularne">Fletcher House</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Popularne">Capital Pizza</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Popularne">Aroma</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Popularne">Restauracja Rani</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Popularne">Smaczki Babci</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link text-pyszne" href="#najlepsze">Najlepsze oferty</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-pyszne" href="#Restauracje" data-bs-toggle="dropdown" aria-expanded="false">Restauracje</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-pyszne" href="#Restauracje">Craft Premium Kebab</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Restauracje">Pizza Hut</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Restauracje">McDonald's</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Restauracje">Dersim Kebab</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Restauracje">Indyjska Rani</a></li>
+                    <li><a class="dropdown-item text-pyszne" href="#Restauracje">Smaczki Babci</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-pyszne" href="about.html">O nas</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-pyszne" href="#kontakt">Kontakt</a>
+                </li>
+                </ul>
+                <form role="search" class="mb-1 ms-2">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <button type="button" class="btn btn-outline-light ms-2 me-2 bg-pyszne">Logowanie</button>
+                <button type="button" class="btn btn-outline-dark">Rejestracja</button>
+            </div>
+        </div>
+    </nav>
+
+      <div id="myCarousel" class="carousel slide mb-" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="w-100" src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/ar_40:9,c_thumb,w_1580/f_auto/q_auto/dpr_1.0/v1713703685/static-takeaway-com/images/chains/pl/express_pizza/headers/header" alt="">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Pyszne.pl</h1>
+                <!-- <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p> -->
+                <p><a class="btn btn-lg btn-primary bg-pyszne" href="#">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img class="w-100" src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/ar_40:9,c_thumb,w_1580/f_auto/q_auto/dpr_1.0/v1713703525/static-takeaway-com/images/generic/heroes/1296/1296_american_pl_de_15" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Pyszne.pl</h1>
+                <!-- <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p> -->
+                <p><a class="btn btn-lg btn-primary bg-pyszne" href="#">Sign up today</a></p>
+                <!-- <h1>Another example headline.</h1> -->
+                <!-- <p>Some representative placeholder content for the second slide of the carousel.</p> -->
+                <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/ar_40:9,c_thumb,w_1580/f_auto/q_auto/dpr_1.0/v1713703621/static-takeaway-com/images/generic/heroes/61/61_thai_22" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Pyszne.pl</h1>
+                <!-- <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p> -->
+                <p><a class="btn btn-lg btn-primary bg-pyszne" href="#">Sign up today</a></p>
+                <!-- <h1>Another example headline.</h1> -->
+                <!-- <p>Some representative placeholder content for the second slide of the carousel.</p> -->
+                <!-- <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="w-100" src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/ar_40:9,c_thumb,w_1580/f_auto/q_auto/dpr_1.0/v1713703651/static-takeaway-com/images/restaurants/pl/ONPRP07N/headers/header" alt="">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Pyszne.pl</h1>
+                <!-- <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p> -->
+                <p><a class="btn btn-lg btn-primary bg-pyszne" href="#">Sign up today</a></p>
+                <!-- <h1>One more for good measure.</h1> -->
+                <!-- <p>Some representative placeholder content for the third slide of this carousel.</p> -->
+                <!-- <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container mb-2 mt-5">
+        <section id="Popularne" class="mt-1 mb-4">
+          <div class="d-flex justify-content-center">
+            <h2 class="fs-1">Najgorętsze restauracje w twojej okolicy</h2>
+          </div>
+          <div id="Popularne-oferty" class="border-top row d-lg-flex justify-content-center">
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1713705817/static-takeaway-com/images/chains/pl/express_pizza/headers/header" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Express Pizza - Ta prostokątna!</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.5/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (2431)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Włoskie, Pizza
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        30-40 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        5.00 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 50 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714475831/static-takeaway-com/images/generic/heroes/1296/1296_american_pl_de_15" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Fletcher House</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.9/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (353)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Burgery, Amerykańska
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        50-60 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        7.50 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 60 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714475831/static-takeaway-com/images/restaurants/pl/5QQO0Q3/headers/header" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Capital Pizza</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            2.6/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (1325)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Włoskie, Pizza
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        25-30 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        2.50 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 45 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2" src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714475831/static-takeaway-com/images/restaurants/pl/N0O11NQ/headers/header" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Aroma</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.3/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (356)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Włoskie, Pizza
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        25-60 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        5.00 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 30 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714475831/static-takeaway-com/images/generic/heroes/1596/71_indian_65" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Restauracja Indyjska Rani</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.4/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (2431)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Włoskie, Pizza
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        30-40 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        5.00 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 50 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714475831/static-takeaway-com/images/generic/heroes/1236/1236_dumplings_8" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Smaczki Babci</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.3/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (23)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Pierogi, Dania na lunch
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        45-50 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        15.00 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 25 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            
+          <div class="col-12 cursor-point mt-3">
+            <p class="text-center f-3 text-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down me-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+              </svg> Pokaż więcej
+            </p>
+            <hr>
+          </div>
+        </section>
+
+        <section id="najlepsze">
+          <div class="d-flex justify-content-center ">
+            <h2 class="fs-1 ">Popularne dania</h2>
+          </div>
+          <div class="border-top row d-lg-flex justify-content-center pt-3">
+            <div class="card col-12 col-sm-6 col-lg-4 m-1" style="width: 18rem;">
+              <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/61c5a0aa-c5a9-11ea-b203-822e244794a0_b1f2d35b_6090_49f3_bd1e_66d9f0593a1c.jpg-md?w=300" class="card-img-top mt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tost z serem</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-pyszne">Go somewhere</a>
+              </div>
+            </div >
+            <div class="card col-12 col-sm-6 col-lg-4 m-1" style="width: 18rem;">
+              <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/64cb29c6-c5b0-11ea-8a94-b2000c51ab5c_a8461650_fb97_4a31_9684_9722055c5fd0.jpg-md?w=300" class="card-img-top mt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Amerykańskie Meatballs</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-pyszne">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-lg-4 m-1" style="width: 18rem;">
+              <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/53129366-c5a8-11ea-8a78-822e244794a0_52b897cd_ac18_4cb5_9921_2653f1d38650.jpg-md?w=300" class="card-img-top mt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pizza Peperoni</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-pyszne">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-lg-4 m-1" style="width: 18rem;">
+              <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/2dee7458-c5b0-11ea-927e-c2fc8785833c_cdba243f_3aeb_451d_b57c_510558469373.jpg-md?w=300" class="card-img-top mt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kleik z trawy</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-pyszne">Go somewhere</a>
+              </div>
+            </div >
+            <div class="card col-12 col-sm-6 col-lg-4 m-1" style="width: 18rem;">
+              <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/b9286bba-c5af-11ea-b72a-c2fc8785833c_15534df7_1bb1_464c_872d_d56aff24647a.jpg-md?w=300" class="card-img-top mt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zieleninka dla wegan</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-pyszne">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-lg-4 m-1" style="width: 18rem;">
+              <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/3188aa02-181c-11eb-8dc0-6e2275755fbc_8b140e11_cbed_4f92_bfa2_a85fc92d1249.jpg-md?w=300" class="card-img-top mt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coś od Sidzinpinga</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-pyszne">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-lg-4 m-1 d-xl-block d-none" style="width: 18rem;">
+              <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/3188aa02-181c-11eb-8dc0-6e2275755fbc_8b140e11_cbed_4f92_bfa2_a85fc92d1249.jpg-md?w=300" class="card-img-top mt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coś od Sidzinpinga</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-pyszne">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-lg-4 m-1 d-xl-block d-none" style="width: 18rem;">
+              <img src="https://imageproxy.wolt.com/wolt-frontpage-images/categories/3188aa02-181c-11eb-8dc0-6e2275755fbc_8b140e11_cbed_4f92_bfa2_a85fc92d1249.jpg-md?w=300" class="card-img-top mt-2" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Coś od Sidzinpinga</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary bg-pyszne">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div id="dania" class="">
+
+
+          </div>
+
+          <div class="col-12 cursor-point mt-3">
+            <p class="text-center f-3 text-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down me-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+              </svg> Pokaż więcej
+            </p>
+            <hr>
+          </div>
+
+        </section>
+
+        <section id="Restauracje">
+          <div class="d-flex justify-content-center ">
+            <h2 class="fs-1 ">Restauracje</h2>
+          </div>
+          <div id="Popularne-oferty" class="border-top row d-lg-flex justify-content-center">
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714477196/static-takeaway-com/images/generic/heroes/1606/531_kebab_21" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Craft Premium Kebab</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            3.9/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (166)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Kebab
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        15-30 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        6.00 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 25 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714477196/static-takeaway-com/images/restaurants/pl/O015ONPN/headers/header" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Pizza Hut, Millenium Hall</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.4/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (3533)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Pizza, Włoska
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        50-60 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        7.50 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 60 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714477196/static-takeaway-com/images/chains/pl/mcdonalds_header_standard/headers/header" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">McDonald's</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            3,4/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (5625)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Burgery, Amerykańskie
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        30-45 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        10.50 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 20 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2" src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714477196/static-takeaway-com/images/restaurants/pl/N0QOOPR/headers/header" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Dersim Kebab</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.3/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (356)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Kebab, Falafel
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        25-60 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        6.99 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 45 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714475831/static-takeaway-com/images/generic/heroes/1596/71_indian_65" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Restauracja Indyjska Rani</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.4/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (2431)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Włoskie, Pizza
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        30-40 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        5.00 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 50 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            <div class="row col-12 col-lg-5 m-3 rounded-2 p-0 bg-white shadow cursor-point restauracje">
+              <div class="row">
+                <div class="d-none d-xl-block col-lg-4 rounded-2 m-0 p-0 h-100 z-oferty">
+                  <img class="zdjęcie-oferty h-100 rounded-2 " src="https://res.cloudinary.com/tkwy-prod-eu/image/upload/c_thumb,h_136,w_288/f_auto/q_auto/dpr_1.0/v1714475831/static-takeaway-com/images/generic/heroes/1236/1236_dumplings_8" alt="">
+                </div> 
+                <div class="opis-oferty  col-xl-8 rounded-2 m-0 mt-2 p-0 ps-3 pt-3 h-100">
+                  <!-- opis oferty  -->
+                  <div class="col-12">
+                    <h3 class="fs-4 text-dark">Smaczki Babci</h3>
+                  </div>
+                      <!-- druga linia -->
+                      <div class="col-12 d-flex align-items-center text-body-secondary mb-2" style="font-size: 85%;">
+                        <!-- ocena -->
+                          <div class="w-5 p-0 m-0 me-1">
+                            <!-- gwiazda -->
+                            <img class="img-fluid" src="star-solid.svg" alt="">
+                          </div>
+                          <div class="p-0 m-0 me-1">
+                            <!-- ocena liczba srednia -->
+                            4.3/5
+                          </div>
+                          <div class="p-0 m-0 text-body-tertiary" style="font-size: 75%;">
+                            <!-- liczba ocen -->
+                            (23)
+                          </div>
+                          <div class="ms-3">
+                            <!-- kategorie jedzenia -->
+                            Pierogi, Dania na lunch
+                          </div>
+                      </div>
+                    
+                    <div class="col-12 d-flex align-items-center text-body-secondary mb-3 me-2" style="font-size: 85%;">
+                      <!-- trzecia linia -->
+                      <div>
+                        <!-- czas dostawy -->
+                        <img class="w-5 m-0 me-1 opacity-75" src="clock-regular.svg" alt="">
+                        45-50 min
+                        <img class="w-5 m-1 ms-3 opacity-75" src="bicycle-solid.svg" alt="">
+                        <!-- koszt dostawy -->
+                        15.00 zł
+                        <img class="w-5 m-1 ms-3 opacity-75" src="basket-shopping-solid.svg" alt="">
+                        <!-- minimum zamówienia -->
+                        min. 25 zł
+                      </div>
+                    </div>    
+                  </div>
+              </div>
+            </div>
+            <!-- --------------------------------- -->
+            
+          <div class="col-12 cursor-point mt-3">
+            <p class="text-center f-3 text-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down me-1" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+              </svg> Pokaż więcej
+            </p>
+            <hr>
+          </div>
+        </section>
+
+        <section id="kontakt">
+          <div class="d-flex justify-content-center">
+            <h2 class="fs-1">Kontakt</h2>
+          </div>
+          <div class="row border-top">
+            <div class="col-12 col-lg-6 d-flex align-items-center justify-content-end pe-3 fs-4">
+              <p class="text-end">
+                Millenium Hall <br>
+                Al. Kopisto 1 <br>
+                35-315 Rzeszów <br>
+                Tel. 586-873-265
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.286312170246!2d22.01162323913653!3d50.02760901405185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfa58216823eb%3A0xbcfa52845775582e!2sMillenium%20Hall!5e0!3m2!1spl!2spl!4v1714495927319!5m2!1spl!2spl" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          </div>
+        </section>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-3 col-sm-6 mb-0 text-body-secondary">&copy; 2024 Company, Inc</p>
+      
+          <a href="/" class="col-md-3 col-sm-6 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+      
+          <ul class="nav col-md-5 col-sm-12 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Główna</a></li>
+            <li class="nav-item"><a href="#Popularne" class="nav-link px-2 text-body-secondary">Popularne</a></li>
+            <li class="nav-item"><a href="#Restauracje" class="nav-link px-2 text-body-secondary">Restauracje</a></li>
+            <li class="nav-item"><a href="#najlepsze" class="nav-link px-2 text-body-secondary">Najlepsze oferty</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">O nas</a></li>
+            <li class="nav-item"><a href="#kontakt" class="nav-link px-2 text-body-secondary">Kontakt</a></li>
+          </ul>
+        </footer>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

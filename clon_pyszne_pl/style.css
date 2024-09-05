@@ -1,0 +1,61 @@
+body, .bg-deafuld{
+    background-color: rgb(243, 243, 243) !important;
+}
+
+.bg-pyszne{
+    background-color: rgb(255, 128, 1) !important;
+    border-color: rgb(255, 128, 1) !important;
+}
+.bg-pyszne:hover{
+    background-color: rgb(201, 102, 4) !important;
+    border-color: rgb(201, 102, 4) !important;
+}
+
+.text-pyszne{
+    color: rgb(255, 128, 1) !important;
+}
+
+
+.myCarousel img{
+  width: 100%;
+}
+
+.sedan-regular, h2 {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sedan-regular-italic {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+.cursor-point{
+    cursor: pointer !important;
+}
+.w-5{
+    width: 3.75% !important;
+}
+
+.restauracje:hover{
+    scale: 1.05;
+}
+.zdjęcie-oferty{
+    /* transform: translateX(50%) !important; */
+    margin: 0 auto !important;
+    display: block !important;
+
+}
+.z-oferty{
+    overflow: hidden !important;
+    justify-content: center !important;
+}
+
+@media screen and (max-width: 992px) {
+    .w-5{
+        width: 2% !important;
+    }
+}
+
